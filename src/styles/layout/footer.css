@@ -1,0 +1,35 @@
+.footer {
+  background: var(--color-space-dark);
+  padding: var(--spacing-lg);
+  margin-top: auto;
+  border-top: 1px solid var(--glass-border);
+  box-shadow: 0 -5px 20px rgba(9, 11, 26, 0.5);
+}
+
+.footer .content {
+  text-align: center;
+}
+
+.footer p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.footer strong {
+  color: var(--color-cyan-accent);
+  text-shadow: var(--shadow-accent);
+}
+
+.footer a {
+  color: var(--color-cyan-accent);
+  text-decoration: none;
+  transition: var(--transition-normal);
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  color: var(--color-sky-accent);
+  text-shadow: var(--shadow-accent);
+  transform: scale(1.1);
+}
+

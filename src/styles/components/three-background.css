@@ -1,0 +1,42 @@
+.three-background,
+.three-scene,
+.three-hero,
+.three-logos {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.three-background canvas,
+.three-scene canvas,
+.three-hero canvas,
+.three-logos canvas {
+  display: block;
+  will-change: transform;
+}
+
+/* Variantes para diferentes secciones */
+.three-hero {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.three-scene {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.three-logos {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-background);
+  opacity: 0.3;
+}
+
