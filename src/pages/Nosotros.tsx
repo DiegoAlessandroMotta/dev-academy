@@ -20,9 +20,7 @@ const Nosotros = () => {
         </div>
         <figure className="hero_figure">
           <ThreeHero variant="minimal" />
-          <div className="hero_img-placeholder" data-animation="up">
-            <div className="hero_img-glow"></div>
-          </div>
+            <img src="./img/objetivos.png" alt="" className="hero_img" data-animation="up"></img>
         </figure>
       </section>
       <section className="hero">
@@ -32,9 +30,7 @@ const Nosotros = () => {
         </div>
         <figure className="hero_figure">
           <ThreeHero variant="minimal" />
-          <div className="hero_img-placeholder" data-animation="up">
-            <div className="hero_img-glow"></div>
-          </div>
+          <img src="./img/modelo_gif_cdvo.gif" alt="" className="hero_img" data-animation="up"></img>
         </figure>
         <div className="hero_texts">
           <h2 className="hero_title">Vision</h2>

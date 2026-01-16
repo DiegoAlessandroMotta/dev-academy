@@ -12,7 +12,7 @@ interface ThreeSceneProps {
 const ThreeScene = ({
   className = '',
   particleCount = 1500,
-  geometryCount = 12,
+  geometryCount = 7,
   intensity = 0.6,
 }: ThreeSceneProps) => {
   const mountRef = useRef<HTMLDivElement>(null)
@@ -25,6 +25,7 @@ const ThreeScene = ({
   const timeRef = useRef(0)
 
   useEffect(() => {
+    
     if (!mountRef.current) return
 
     // Nueva paleta de colores
@@ -35,23 +36,6 @@ const ThreeScene = ({
       new THREE.Color(0x30d5c8), // cyan accent
       new THREE.Color(0x59ebff), // sky accent
     ]
-
-    //imagenes load
-      const textureC = new THREE.TextureLoader();
-      const texturePython = new THREE.TextureLoader();
-      const textureJava = new THREE.TextureLoader();
-      const textureLua = new THREE.TextureLoader();
-      const texturephp = new THREE.TextureLoader();
-      const textureReact = new THREE.TextureLoader();
-
-
-      const Logoc = textureC.load('/img/logos/c++.png');
-      const logopython = texturePython.load('/img/logos/python.png');
-      const logoJava = textureJava.load('/img/logos/java.png');
-      const logoJs = textureJava.load('/img/logos/j.png');
-      const logoLua = textureLua.load('/img/logos/php.png');
-      const logoPhp = texturephp.load('/img/logos/php.png');
-      const logoReact = textureReact.load('/img/logos/')
 
     // Escena
     const scene = new THREE.Scene()
@@ -115,53 +99,7 @@ const ThreeScene = ({
     scene.add(particleSystem)
     particlesRef.current = particleSystem
 
-    // Geometrías flotantes optimizadas
-    const geometryTypes = [
-      () => new THREE.IcosahedronGeometry(0.4, 0),
-      () => new THREE.OctahedronGeometry(0.4, 0),
-      () => new THREE.TetrahedronGeometry(0.4, 0),
-      () => new THREE.TorusGeometry(0.3, 0.1, 8, 16),
-    ]
-
-    for (let i = 0; i < geometryCount; i++) {
-      const geometryType = geometryTypes[Math.floor(Math.random() * geometryTypes.length)]
-      const geometry = geometryType()
-      const color = colorPalette[Math.floor(Math.random() * colorPalette.length)]
-      
-
-      //falta corregir
-      const material = new THREE.SpriteMaterial ({
-        map:logoJava
-      })
-
-      const mesh = new THREE.Mesh(geometry, material)
-      const angle = (i / geometryCount) * Math.PI * 2
-      const radius = 3 + Math.random() * 2
-      mesh.position.set(
-        Math.cos(angle) * radius,
-        Math.sin(angle) * radius,
-        (Math.random() - 0.5) * 5
-      )
-      mesh.rotation.set(
-        Math.random() * Math.PI,
-        Math.random() * Math.PI,
-        Math.random() * Math.PI
-      )
-      
-      // Guardar datos para animación
-      ;(mesh as any).initialPosition = mesh.position.clone()
-      ;(mesh as any).rotationSpeed = {
-        x: (Math.random() - 0.5) * 0.02,
-        y: (Math.random() - 0.5) * 0.02,
-        z: (Math.random() - 0.5) * 0.02,
-      }
-      ;(mesh as any).floatSpeed = Math.random() * 0.01 + 0.005
-      ;(mesh as any).floatAmount = Math.random() * 0.5 + 0.3
-      
-      scene.add(mesh)
-      geometriesRef.current.push(mesh)
-    }
-
+  
     // Luces optimizadas con nueva paleta
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.4)
     scene.add(ambientLight)
@@ -186,21 +124,22 @@ const ThreeScene = ({
       }
 
       // Animar geometrías con movimiento suave
-      geometriesRef.current.forEach((mesh, index) => {
-        const data = mesh as any
-        mesh.rotation.x += data.rotationSpeed.x
+      geometriesRef.current.forEach((mesh) => {
+        //const data = mesh as any
+        mesh.rotation.y += mesh.userData.spinSpped;
+        /*mesh.rotation.x += data.rotationSpeed.x
         mesh.rotation.y += data.rotationSpeed.y
         mesh.rotation.z += data.rotationSpeed.z
-
+        */
         // Movimiento flotante suave
-        const floatOffset = Math.sin(timeRef.current * 2 + index) * data.floatAmount
-        mesh.position.y = data.initialPosition.y + floatOffset
+        //const floatOffset = Math.sin(timeRef.current * 2 + index) * data.floatAmount
+        //mesh.position.y = data.initialPosition.y + floatOffset
 
         // Rotación orbital suave
-        const orbitAngle = timeRef.current * 0.5 + index
-        const orbitRadius = 3 + Math.sin(timeRef.current + index) * 0.5
-        mesh.position.x = Math.cos(orbitAngle) * orbitRadius
-        mesh.position.z = Math.sin(orbitAngle) * orbitRadius
+        //const orbitAngle = timeRef.current * 0.5 + index
+        //const orbitRadius = 3 + Math.sin(timeRef.current + index) * 0.5
+        //mesh.position.x = Math.cos(orbitAngle) * orbitRadius
+        //mesh.position.z = Math.sin(orbitAngle) * orbitRadius
       })
 
       // Mover luces suavemente

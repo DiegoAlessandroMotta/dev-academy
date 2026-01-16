@@ -51,13 +51,20 @@ const ThreeLogos = ({ className = '' }: ThreeLogosProps) => {
     // Logos de programación
     const languages = [
       { name: 'Python', color: 0x3776ab },
+      { name: 'textoValor.length();', color: 0x2c2d72 },
       { name: 'Java', color: 0xed8b00 },
+      { name: 'if ( 0 == varpos ){}', color: 0x2c2d72 },
       { name: 'C++', color: 0x00599c },
+      { name: '(Mapa)? 1 : 0', color: 0x00599c },
+      { name: 'for(int i , o;i < 5;i++,o++)', color: 0x2c2d72 },
       { name: 'PHP', color: 0x777bb4 },
+      { name: 'const contador = 0;', color: 0x2c2d72 },
       { name: 'JS', color: 0xf7df1e },
+      { name: 'mapaValores[5][5] = 0;', color: 0x2c2d72 },
       { name: 'CSS', color: 0x1572b6 },
       { name: 'HTML', color: 0xe34f26 },
       { name: 'Lua', color: 0x2c2d72 },
+
     ]
 
     // Crear geometrías para los logos

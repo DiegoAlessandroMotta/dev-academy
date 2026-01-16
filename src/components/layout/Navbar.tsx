@@ -45,8 +45,8 @@ const Navbar = () => {
           <span className="_afef"></span>
         </button>
         <Link to="/" className="logo navbar-item">
-          <img src="/view/img/1.png" alt="" width="30px" />
-          PYCS
+          <img src="/img/1.png" alt="" width="30px" />
+          ZYNOVA
         </Link>
       </div>
       <nav className="navbar" role="navigation" aria-label="main navigation">

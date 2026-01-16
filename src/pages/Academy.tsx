@@ -26,9 +26,7 @@ const Academy = () => {
   return (
     <>
       <ThreeLogos />
-      <div className="imagen_date1">
-        <div className="imagen_date1-overlay"></div>
-      </div>
+      
       <section className="hero">
         <div className="presentacion">
           <div className="imagen_presentacion">
