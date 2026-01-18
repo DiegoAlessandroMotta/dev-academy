@@ -74,12 +74,7 @@ const Academy = () => {
             ))}
           </p>
         </div>
-        <figure className="hero_figure">
-          <ThreeHero variant="minimal" />
-          <div className="hero_img-placeholder" data-animation="show">
-            <div className="hero_img-glow"></div>
-          </div>
-        </figure>
+        
       </section>
       <section className="hero" id="informacion">
         <div className="hero_texts">
@@ -95,9 +90,7 @@ const Academy = () => {
         </div>
         <figure className="hero_figure">
           <ThreeHero variant="minimal" />
-          <div className="hero_img-placeholder" data-animation="show">
-            <div className="hero_img-glow"></div>
-          </div>
+          <img src={academyInfo.generalInfo.image} className="hero_img" alt="" data-animation="up"></img>
         </figure>
       </section>
       <section className="hero" id="whi_cdvo">
@@ -127,9 +120,7 @@ const Academy = () => {
         </div>
         <figure className="hero_figure">
           <ThreeHero variant="minimal" />
-          <div className="hero_img-placeholder" data-animation="up">
-            <div className="hero_img-glow"></div>
-          </div>
+          <img src={academyInfo.startInfo.image} className="hero_img" alt="" data-animation="up"></img>
         </figure>
       </section>
       <section className="hero" id="cursos">
@@ -137,7 +128,7 @@ const Academy = () => {
           <h2 className="hero_title">Cursos</h2>
           <div className="contenedor_cursos">
             {courses.map((course) => (
-              <div key={course.id} className="card">
+              <button key={course.id} className="card" onClick={() => handleInfoClick(course.id)}>
                 <div className="card-content">
                   <p className="title">&quot;{course.title}&quot;</p>
                   <p className="subtitle">{course.subtitle}</p>
@@ -155,31 +146,15 @@ const Academy = () => {
                       </a>
                     </span>
                   </p>
-                  {course.infoLink && !course.isFinished && (
-                    <p className="card-footer-item">
-                      <span>
-                        {' '}
-                        Pedir mas{' '}
-                        <a
-                          className="informacion"
-                          onClick={() => handleInfoClick(course.id)}
-                          style={{ cursor: 'pointer' }}
-                        >
-                          Informacion
-                        </a>{' '}
-                      </span>
-                    </p>
-                  )}
+                  
                 </footer>
-              </div>
+              </button>
             ))}
           </div>
         </div>
         <figure className="hero_figure">
           <ThreeHero variant="minimal" />
-          <div className="hero_img-placeholder" data-animation="up">
-            <div className="hero_img-glow"></div>
-          </div>
+          <img src={academyInfo.startInfo.image} className="hero_img" alt="" data-animation="up"></img>
         </figure>
       </section>
       <section className="hero" id="intranet">
@@ -203,9 +178,8 @@ const Academy = () => {
         </div>
         <figure className="hero_figure">
           <ThreeHero variant="minimal" />
-          <div className="hero_img-placeholder" data-animation="up">
-            <div className="hero_img-glow"></div>
-          </div>
+          <img src={academyInfo.intranet.image} className="hero_img" alt="" data-animation="up"></img>
+          
         </figure>
       </section>
       <CourseModal isOpen={isOpen} onClose={closeModal} courseId={selectedCourse} />
