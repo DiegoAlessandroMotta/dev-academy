@@ -10,6 +10,7 @@ export interface Course {
   isFinished?: boolean;
   description?: string;
   levels?: CourseLevel[];
+  precio?:string
 }
 
 export interface CourseLevel {
@@ -48,7 +49,7 @@ class DataPrincipal {
       subtitle:
         "Empieza en programación con C++ y desarrolla la lógica que usan los verdaderos programadores. Desde cero, paso a paso, con proyectos reales.",
       whatsappLink:
-        "https://api.whatsapp.com/send/?phone=925543023&text= hola quisiera incribirme al curso de c++ &type=phone_number",
+        "https://wa.me/51925543023?text=hola%20quiero%20inscribirme%20al%20curso%20de%c",
       infoLink: "info",
       language: "language-cpp",
       description:
@@ -109,14 +110,15 @@ class DataPrincipal {
             "class mago{ private: int vida; int puntos; public: void atakar() }",
         },
       ],
+      precio: "Costo mensual de S/250 soles",
     },
     {
       id: "2",
-      title: "Aplicaciones WEB",
+      title: "APLICACIONES WEB",
       subtitle:
         "Aprende a construir sitios y aplicaciones web modernas desde la base. Domina frontend paso a paso y crea proyectos funcionales que puedas mostrar desde el primer mes.",
       whatsappLink:
-        "https://api.whatsapp.com/send/?phone=925543023&text= hola quisiera incribirme al curso de aplicaciones web &type=phone_number",
+        "https://wa.me/51925543023?text=hola%20quiero%20inscribirme%20al%20curso%20de%20Aplicaciones%20web",
       infoLink: "info",
       language: "language-js",
       description: `
@@ -178,6 +180,7 @@ class DataPrincipal {
           .cath(error => console.warn(error));`,
         },
       ],
+      precio: "Costo mensual de S/300 soles",
     },
   ];
 
@@ -327,7 +330,7 @@ class DataPrincipal {
         description:
           "Se creo esta plataforma para pulir las capacidades de los estudiantes de informatica o sistemas, llevandolos al siguiente nivel. donde cada miembro es asesorado en su camino de la programacion.",
         whatsappLink:
-          "https://api.whatsapp.com/send/?phone=925543023&text= hola quisiera mas informacion &type=phone_number",
+          "https://wa.me/51925543023?text=hola%20quisiera%20mas%20informacion",
         image: "/img/modelo_gif_cdvo.gif",
       },
       intranet: {
@@ -338,8 +341,7 @@ class DataPrincipal {
         image: "/img/academy2.gif",
       },
       buttons: {
-        enroll:
-          "https://api.whatsapp.com/send/?phone=925543023&text= hola quisiera matricularme &type=phone_number",
+        enroll: "https://wa.me/51925543023?text=hola%20quisiera%20matricularme",
         intranet: "#intranet",
         courses: "#cursos",
         info: "#whi_cdvo",

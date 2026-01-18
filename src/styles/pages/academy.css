@@ -119,10 +119,12 @@
 
 @media only screen and (max-width: 600px) {
     .botones_derecha {
+        width: 100%;
+        top: 0;
+        left: 0;
         flex-direction: column;
-        top: 60%;
-        left: 50%;
-        transform: translateX(-50%);
+        position: relative;
+        transform: translateX(0);
     }
     .botones_derecha a {
         width: 200px;

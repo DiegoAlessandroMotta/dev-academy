@@ -122,7 +122,7 @@
         align-items: center;
     }
     .navbar_contenido a {
-        width: 60%;
+        width: 100%;
     }
     .navbar_contenido .titulo {
         display: flex;
@@ -136,6 +136,7 @@
         width: 100vh;
         height: 10vh;
         display: none;
+        background: #0000007a;
         transition: var(--transition-normal);
     }
     ._afec {

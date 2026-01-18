@@ -34,7 +34,7 @@ class CourseController {
       }
     } else if (courseId === '2') {
       return {
-        title: 'INFORMACION DEL CURSO DE APLICACIONES DE PAGINAS WEB',
+        title: `INFORMACION DEL CURSO DE ${course.title}`,
         whatsappLink: course.whatsappLink,
         content: this.generateCourseContent(course),
       }
@@ -89,6 +89,7 @@ class CourseController {
         ))}
         <br />
         <p>LOS CERTIFICADOS SERAN OTORGADOS A LOS ALUMNOS MAS DESTACADOS .</p>
+        <h3>{course.precio}</h3>
       </div>
     )
   }

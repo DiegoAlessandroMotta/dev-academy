@@ -10,7 +10,7 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://api.whatsapp.com/send/?phone=925543023&text=hola &type=phone_number"
+            href="https://wa.me/51925543023?text=Hola"
           >
             whatsapp
           </a>

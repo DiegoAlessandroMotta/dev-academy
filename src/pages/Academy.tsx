@@ -22,6 +22,7 @@ const Academy = () => {
     setSelectedCourse(courseId)
     openModal()
   }
+  
 
   return (
     <>
