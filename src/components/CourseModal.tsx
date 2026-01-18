@@ -1,6 +1,9 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo } from 'react'
 import courseController from '../controllers/CourseController'
+import Prism from "prismjs"
 import '../styles/components/modal.css'
+import "prismjs/themes/prism-tomorrow.css"
+
 
 interface CourseModalProps {
   isOpen: boolean
@@ -13,6 +16,10 @@ const CourseModal = ({ isOpen, onClose, courseId }: CourseModalProps) => {
     if (!courseId) return null
     return courseController.getCourseModalContent(courseId)
   }, [courseId])
+
+  useEffect(() => {
+    Prism.highlightAll()
+  }, [courseInfo])
 
   if (!isOpen || !courseInfo) return null
 

@@ -5,6 +5,7 @@ export interface Course {
   title: string;
   subtitle: string;
   whatsappLink: string;
+  language:string;
   infoLink?: string;
   isFinished?: boolean;
   description?: string;
@@ -49,6 +50,7 @@ class DataPrincipal {
       whatsappLink:
         "https://api.whatsapp.com/send/?phone=925543023&text= hola quisiera incribirme al curso de c++ &type=phone_number",
       infoLink: "info",
+      language: "language-cpp",
       description:
         "Es un lenguaje de programación de propósito general que se utiliza en una amplia variedad de aplicaciones, desde sistemas operativos y controladores de dispositivos hasta juegos y aplicaciones empresariales y al tener acceso directo al sistema operativo se puede usar para simplificar ciertas cosas. Su versatilidad lo hace útil para muchos tipos de proyectos.",
       levels: [
@@ -116,6 +118,7 @@ class DataPrincipal {
       whatsappLink:
         "https://api.whatsapp.com/send/?phone=925543023&text= hola quisiera incribirme al curso de aplicaciones web &type=phone_number",
       infoLink: "info",
+      language: "language-js",
       description: `
         Aprenderas html css y js y como se conectan entre si para poder funcionar, entenderas la importancia que tiene el backend y por que son ramas 
         distintas y como debe enviarse la informacion
@@ -132,7 +135,7 @@ class DataPrincipal {
             "HOVER",
             "EVALUACION DE PROYECTO",
           ],
-          codeExample: '.MyCARD:hover{font-size:10}',
+          codeExample: ".MyCARD:hover{font-size:10}",
         },
         {
           level: "SEGUNDO NIVEL",
@@ -157,8 +160,7 @@ class DataPrincipal {
             "Submits",
             "EVALUACION DE PROYECTO",
           ],
-          codeExample:
-            `let CARD = document.getElementById("ZYNOVA")`,
+          codeExample: `let CARD = document.getElementById("ZYNOVA")`,
         },
         {
           level: "CUARTO NIVEL",
@@ -171,8 +173,9 @@ class DataPrincipal {
             "API conect",
             "EVALUACION DE PROYECTO",
           ],
-          codeExample:
-            "class mago{ private: int vida; int puntos; public: void atakar() }",
+          codeExample: `fetch(URL)
+          .then(response=>{console.log(response)})
+          .cath(error => console.warn(error));`,
         },
       ],
     },
@@ -322,7 +325,7 @@ class DataPrincipal {
         title: "¿ QUE ES ZYNOVA-Academy?",
         subtitle: '"ZYNOVA - ACADEMY"',
         description:
-          "Se creo esta plataforma para pulir las capacidades de los estudiantes de informatica o sistemas, llevandolos al siguiente nivel. donde cada mienbro es asesorado en su camino de la programacion.",
+          "Se creo esta plataforma para pulir las capacidades de los estudiantes de informatica o sistemas, llevandolos al siguiente nivel. donde cada miembro es asesorado en su camino de la programacion.",
         whatsappLink:
           "https://api.whatsapp.com/send/?phone=925543023&text= hola quisiera mas informacion &type=phone_number",
         image: "/img/modelo_gif_cdvo.gif",

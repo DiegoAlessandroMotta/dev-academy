@@ -1,38 +1,23 @@
 import { Course } from '../models/DataPrincipal'
 import dataPrincipal from '../models/DataPrincipal'
-
 class CourseController {
-  /**
-   * Obtiene todos los cursos disponibles
-   */
+  
   getAllCourses(): Course[] {
     return dataPrincipal.getCourses()
   }
 
-  /**
-   * Obtiene un curso por su ID
-   */
   getCourseById(id: string): Course | undefined {
     return dataPrincipal.getCourseById(id)
   }
 
-  /**
-   * Obtiene solo los cursos activos (no finalizados)
-   */
   getActiveCourses(): Course[] {
     return dataPrincipal.getCourses().filter((course) => !course.isFinished)
   }
 
-  /**
-   * Obtiene solo los cursos finalizados
-   */
   getFinishedCourses(): Course[] {
     return dataPrincipal.getCourses().filter((course) => course.isFinished)
   }
 
-  /**
-   * Genera el contenido HTML/JSX para el modal de información de un curso
-   */
   getCourseModalContent(courseId: string): {
     title: string
     content: JSX.Element
@@ -59,6 +44,7 @@ class CourseController {
   }
 
   generateCourseContent(course: Course): JSX.Element {
+    
     return (
       <div>
         <h1>{course.title}</h1>
@@ -89,7 +75,13 @@ class CourseController {
             </ul>
             {level.codeExample && (
               <>
-                <blockquote>{level.codeExample}</blockquote>
+                <blockquote>
+                  <pre>
+                    <code className={course.language}>
+                      {level.codeExample}
+                    </code>
+                  </pre>
+                </blockquote>
                 <br />
               </>
             )}
