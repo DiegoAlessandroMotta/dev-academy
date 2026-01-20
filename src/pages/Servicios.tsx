@@ -21,7 +21,8 @@ const Servicios = () => {
           </p>
         </div>
       </section>
-      <section className="hero1">
+      {/* Jaime aqui le pones tu contenido */}
+      {/* <section className="hero1">
         <div className="boton_distributed">
           <div className="galeria3">
             {services.map((service, index) => (
@@ -31,8 +32,8 @@ const Servicios = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </div> 
+      </section> */ }
     </>
   )
 }
