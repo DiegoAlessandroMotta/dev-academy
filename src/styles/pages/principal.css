@@ -373,7 +373,7 @@
     .presentacion {
         left: 50%;
         top: 25%;
-        width: 90%;
+        width: 90vh;
         max-width: 350px;
     }
     .hero_title {

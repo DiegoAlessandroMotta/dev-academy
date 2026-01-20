@@ -164,17 +164,7 @@ const Academy = () => {
           <div className="card">
             <div className="card-content">
               <p className="subtitle">{academyInfo.intranet.description}</p>
-            </div>
-            <footer className="card-footer">
-              <p className="card-footer-item">
-                <span>
-                  Ir a
-                  <a href={academyInfo.intranet.link} target="_blank" rel="noopener noreferrer">
-                    Intranet
-                  </a>
-                </span>
-              </p>
-            </footer>
+            </div>              
           </div>
         </div>
         <figure className="hero_figure">

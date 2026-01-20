@@ -20,18 +20,35 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
     const valor = document.querySelector('.botones_navbar') as HTMLElement
+    const ventana = document.getElementById("navbarBasicExample") as HTMLDivElement
     const elemento = document.querySelector('.navbar_contenido') as HTMLElement
     const link = elemento?.querySelector('a') as HTMLElement
 
+    const APP = document.getElementsByClassName("App")[0] as HTMLElement
+
     if (valor && elemento && link) {
       if (isMenuOpen) {
-        valor.style.height = '10vh'
-        valor.style.display = 'none'
         link.style.width = '60%'
+        ventana.classList.add("closewindows");
+        document.body.style.overflow = "";
+        setTimeout(()=>{
+          ventana.classList.remove("closewindows")
+          ventana.style.width = '1vh';
+          valor.style.display = 'none'
+        },1000);
+        APP.style.overflow = ""
       } else {
+        document.body.style.overflow = "hidden";
         valor.style.height = '100vh'
-        valor.style.display = 'block'
         link.style.width = '80%'
+        ventana.classList.add("deploywindows");
+        valor.style.display = 'block'
+        ventana.style.width = '1vh';
+        APP.style.overflow = "hidden"
+        setTimeout(()=>{
+          ventana.classList.remove("deploywindows");
+          ventana.style.width = '100vh';
+        },1000)
       }
     }
   }

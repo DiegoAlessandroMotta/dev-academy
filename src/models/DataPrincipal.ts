@@ -110,7 +110,7 @@ class DataPrincipal {
             "class mago{ private: int vida; int puntos; public: void atakar() }",
         },
       ],
-      precio: "Costo mensual de S/250 soles",
+      precio: "Costo mensual de S/150 soles",
     },
     {
       id: "2",
@@ -180,7 +180,7 @@ class DataPrincipal {
           .cath(error => console.warn(error));`,
         },
       ],
-      precio: "Costo mensual de S/300 soles",
+      precio: "Costo mensual de S/200 soles",
     },
   ];
 
@@ -260,7 +260,7 @@ class DataPrincipal {
 
   // Información de la empresa
   private companyInfo: CompanyInfo = {
-    name: "CDVO",
+    name: "ZYNOVA",
     description:
       "Somos una empresa que busca desarrollar las tecnologias peruanas , y llevarla al siguiente nivel , para eso creemos que devemos formar excelentes programadores y excelentes Sistemas.",
     mission:
@@ -321,7 +321,7 @@ class DataPrincipal {
       generalInfo: {
         title: "Informacion",
         description:
-          "CDVO comprometido con el desarrollo de tecnologias brinda clases a todos las personas que quieran aprender las tecnologias que estan innovando el futuro. Asesorando a los estudiantes desde cero a intermedio.\nAl completar el curso por completo y estar entre los primeros puestos , obtendras un certificado de reconocimiento firmado por la empresa.(este puede ayudarte a entrar a la empresa).",
+          "ZYNOVA comprometido con el desarrollo de tecnologias brinda clases a todos las personas que quieran aprender las tecnologias que estan innovando el futuro. Asesorando a los estudiantes desde cero a intermedio.\nAl completar el curso por completo y estar entre los primeros puestos , obtendras un certificado de reconocimiento firmado por la empresa.(este puede ayudarte a entrar a la empresa).",
         image: "/img/academy4.gif",
       },
       whatIsAcademy: {
@@ -336,7 +336,7 @@ class DataPrincipal {
       intranet: {
         title: "INTRANET",
         description:
-          "CDVO desarrollo una plataforma exclusivamente para sus estudiantes donde puedes ver tus avances y tus apuntes del curso. puedes acceder a el de manera gratuita.",
+          "desarrollamos una plataforma web exclusivamente para nuestros estudiantes donde pueden ver sus cursos,notas,ranking academico,avances y apuntes..",
         link: "#",
         image: "/img/academy2.gif",
       },
@@ -344,7 +344,7 @@ class DataPrincipal {
         enroll: "https://wa.me/51925543023?text=hola%20quisiera%20matricularme",
         intranet: "#intranet",
         courses: "#cursos",
-        info: "#whi_cdvo",
+        info: "#whi_ZYNOVA",
       },
     };
   }
