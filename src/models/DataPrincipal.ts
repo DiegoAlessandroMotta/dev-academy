@@ -180,7 +180,7 @@ class DataPrincipal {
           .cath(error => console.warn(error));`,
         },
       ],
-      precio: "Costo mensual de S/200 soles",
+      precio: "Costo mensual de S/250 soles",
     },
   ];
 
@@ -315,7 +315,7 @@ class DataPrincipal {
       startInfo: {
         title: "Inicio",
         description:
-          "Las clases inician el 26 de enero \n cada clase esta configurada de lunes a viernes cada uno de ellos duran 3 horas. Aprende un nuevo lenguaje de programacion mientras disfrutas tus vacaciones",
+          "Las clases inician el 2 de febrero \n De lunes a viernes cada uno de ellos duran 3 horas. Aprende un nuevo lenguaje de programacion mientras disfrutas tus vacaciones",
         image: "/img/academy1.gif",
       },
       generalInfo: {
