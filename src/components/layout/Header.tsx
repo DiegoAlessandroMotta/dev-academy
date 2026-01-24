@@ -8,7 +8,7 @@ const Header = () => {
   useEffect(() => {
     const currentPath = location.pathname.replace('/', '') || ''
     const pageTitle = currentPath ? ` || ${currentPath}` : ''
-    document.title = `CDVO${pageTitle}`
+    document.title = `ZYNOVA${pageTitle}`
   }, [location.pathname])
 
   return null

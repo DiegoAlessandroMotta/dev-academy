@@ -19,13 +19,6 @@ const ThreeLogos = ({ className = '' }: ThreeLogosProps) => {
     if (!mountRef.current) return
 
     // Nueva paleta de colores
-    const colorPalette = [
-      new THREE.Color(0x3f0c8f), // galaxy violet
-      new THREE.Color(0x6b1ac5), // galaxy purple
-      new THREE.Color(0xc82bfa), // galaxy pink
-      new THREE.Color(0x30d5c8), // cyan accent
-      new THREE.Color(0x59ebff), // sky accent
-    ]
 
     // Escena
     const scene = new THREE.Scene()
@@ -229,16 +222,16 @@ const ThreeLogos = ({ className = '' }: ThreeLogosProps) => {
       logosRef.current.forEach((mesh) => {
         mesh.geometry.dispose()
         if (Array.isArray(mesh.material)) {
-          mesh.material.forEach((mat) => {
-            if (mat instanceof THREE.Material) {
-              if (mat.map) mat.map.dispose()
-              mat.dispose()
-            }
+          mesh.material.forEach((mat:THREE.Material) => {
+            const material = mat as THREE.Material & { map?: THREE.Texture }
+            if (material.map) material.map.dispose()
+            material.dispose()
           })
         } else {
           if (mesh.material instanceof THREE.Material) {
-            if (mesh.material.map) mesh.material.map.dispose()
-            mesh.material.dispose()
+            const mat = mesh.material as THREE.Material & { map?: THREE.Texture }
+            if (mat.map) mat.map.dispose()
+            mat.dispose()
           }
         }
       })
