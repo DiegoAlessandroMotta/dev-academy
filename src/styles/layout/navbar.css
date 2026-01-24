@@ -188,5 +188,6 @@
     }
     .navbar_contenido.navbar_contenido.estylo_abajo {
         height: 80px;
+        position: fixed;
     }
 }
