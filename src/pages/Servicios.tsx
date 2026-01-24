@@ -1,53 +1,24 @@
 import ThreeScene from '../components/ThreeScene'
-import pageController from '../controllers/PageController'
 import '../styles/pages/principal.css'
 
 const Servicios = () => {
   // Imágenes de apoyo para los servicios
-  const serviceImages = pageController.getServices()
 
-  const featuredServices = [
-    {
-      title: 'Creación de páginas web',
-      badge: 'Landing · E‑commerce · Portales',
-      description:
-        'Diseñamos y desarrollamos sitios y aplicaciones web modernas, rápidas y adaptadas a cualquier dispositivo. Integramos pasarelas de pago, paneles de administración y SEO técnico para que tu proyecto no solo se vea bien, también venda.',
-      highlights: [
-        'Diseños personalizados alineados a tu marca',
-        'Páginas optimizadas para velocidad y SEO',
-        'Integración con métricas y analítica (Google Analytics, Meta, etc.)',
-      ],
-      image: serviceImages[0] ?? '/img/gif_cdvo1.gif',
-    },
-    {
-      title: 'Aplicaciones móviles',
-      badge: 'Android · iOS · PWA',
-      description:
-        'Construimos apps móviles intuitivas, seguras y conectadas a tus sistemas para que tus usuarios siempre estén online. Trabajamos con notificaciones push, autenticación y sincronización de datos en tiempo real.',
-      highlights: [
-        'Interfaces pensadas para usarse con una sola mano',
-        'Experiencia nativa o híbrida según tu necesidad',
-        'Publicación y soporte para tiendas de apps',
-      ],
-      image: serviceImages[1] ?? '/img/gif_cdvo2.gif',
-    },
-    {
-      title: 'Programas de escritorio',
-      badge: 'Automatización · Control · Data',
-      description:
-        'Desarrollamos software de escritorio a medida para optimizar procesos internos, integrar dispositivos y automatizar tareas repetitivas. Ideal para empresas que necesitan control local, reportes avanzados y alto rendimiento.',
-      highlights: [
-        'Automatización de tareas repetitivas y reportes',
-        'Integración con dispositivos físicos y sistemas internos',
-        'Enfoque en seguridad, respaldo y estabilidad',
-      ],
-      image: serviceImages[4] ?? '/img/gif_cdvo9.gif',
-    },
-  ]
 
   return (
     <>
       <ThreeScene particleCount={800} geometryCount={6} intensity={0.5} />
+
+      <section className="hero1">
+        <div className="hero_texts1">
+          <h2 className="hero_title">Nuestros servicios</h2>
+          <p>
+            Te acompañamos en todo el proceso de creación de soluciones
+            digitales: desde la idea hasta el despliegue en producción.
+          </p>
+        </div>
+        
+      </section>
       <section className="hero1 hero-alliance">
         <div className="hero_alliance-card">
           <span className="chip chip-alliance">Alianza estratégica</span>
@@ -76,35 +47,6 @@ const Servicios = () => {
           >
             Conocer stegendev.com
           </a>
-        </div>
-      </section>
-
-      <section className="hero1">
-        <div className="hero_texts1">
-          <h2 className="hero_title">Nuestros servicios</h2>
-          <p>
-            Te acompañamos en todo el proceso de creación de soluciones
-            digitales: desde la idea hasta el despliegue en producción.
-          </p>
-        </div>
-        <div className="boton_distributed">
-          <div className="galeria3">
-            {featuredServices.map((service, index) => (
-              <div key={index} className="card2">
-                <img src={service.image} alt={service.title} />
-                <div className="head-card">
-                  <div className="card-header-row">
-                    <h5 className="titleCard">{service.title}</h5>
-                    {service.badge && (
-                      <span className="chip chip-small">{service.badge}</span>
-                    )}
-                  </div>
-                  <p className="subtitleCard">{service.description}</p>
-                </div>
-                <div className="card2-glow"></div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -205,6 +147,8 @@ const Servicios = () => {
                 <span className="tech-badge">CSS</span>
                 <span className="tech-badge">JavaScript</span>
                 <span className="tech-badge">React</span>
+                <span className="tech-badge">astro</span>
+                
               </p>
             </div>
             <div className="service-detail">
