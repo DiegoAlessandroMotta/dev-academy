@@ -5,12 +5,12 @@ export interface Course {
   title: string;
   subtitle: string;
   whatsappLink: string;
-  language:string;
+  language: string;
   infoLink?: string;
   isFinished?: boolean;
   description?: string;
   levels?: CourseLevel[];
-  precio?:string
+  precio?: string
 }
 
 export interface CourseLevel {
@@ -49,7 +49,7 @@ class DataPrincipal {
       subtitle:
         "Empieza en programación con C++ y desarrolla la lógica que usan los verdaderos programadores. Desde cero, paso a paso, con proyectos reales.",
       whatsappLink:
-        "https://wa.me/51925543023?text=hola%20quiero%20inscribirme%20al%20curso%20de%c",
+        "https://web.whatsapp.com/",
       infoLink: "info",
       language: "language-cpp",
       description:
@@ -118,7 +118,7 @@ class DataPrincipal {
       subtitle:
         "Aprende a construir sitios y aplicaciones web modernas desde la base. Domina frontend paso a paso y crea proyectos funcionales que puedas mostrar desde el primer mes.",
       whatsappLink:
-        "https://wa.me/51925543023?text=hola%20quiero%20inscribirme%20al%20curso%20de%20Aplicaciones%20web",
+        "https://web.whatsapp.com/",
       infoLink: "info",
       language: "language-js",
       description: `
@@ -330,7 +330,7 @@ class DataPrincipal {
         description:
           "Se creo esta plataforma para pulir las capacidades de los estudiantes de informatica o sistemas, llevandolos al siguiente nivel. donde cada miembro es asesorado en su camino de la programacion.",
         whatsappLink:
-          "https://wa.me/51925543023?text=hola%20quisiera%20mas%20informacion",
+          "https://web.whatsapp.com/",
         image: "/img/modelo_gif_cdvo.gif",
       },
       intranet: {
@@ -341,7 +341,7 @@ class DataPrincipal {
         image: "/img/academy2.gif",
       },
       buttons: {
-        enroll: "https://wa.me/51925543023?text=hola%20quisiera%20matricularme",
+        enroll: "https://web.whatsapp.com/",
         intranet: "#intranet",
         courses: "#cursos",
         info: "#whi_Dev Academy",

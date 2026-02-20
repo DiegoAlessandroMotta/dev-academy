@@ -180,7 +180,7 @@ const Servicios = () => {
           </p>
           <a
             className="btn-gradient"
-            href="https://wa.me/51925543023?text=Hola%20quiero%20información%20sobre%20los%20servicios%20de%20Dev Academy"
+            href="https://web.whatsapp.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
