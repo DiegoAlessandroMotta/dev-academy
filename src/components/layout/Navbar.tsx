@@ -31,11 +31,11 @@ const Navbar = () => {
         link.style.width = '60%'
         ventana.classList.add("closewindows");
         document.body.style.overflow = "";
-        setTimeout(()=>{
+        setTimeout(() => {
           ventana.classList.remove("closewindows")
           ventana.style.width = '1vh';
           valor.style.display = 'none'
-        },1000);
+        }, 1000);
         APP.style.overflow = ""
       } else {
         document.body.style.overflow = "hidden";
@@ -45,10 +45,10 @@ const Navbar = () => {
         valor.style.display = 'block'
         ventana.style.width = '1vh';
         APP.style.overflow = "hidden"
-        setTimeout(()=>{
+        setTimeout(() => {
           ventana.classList.remove("deploywindows");
           ventana.style.width = '100vh';
-        },1000)
+        }, 1000)
       }
     }
   }
@@ -61,9 +61,11 @@ const Navbar = () => {
           <span className="_afee"></span>
           <span className="_afef"></span>
         </button>
-        <Link to="/" className="logo navbar-item">
-          <img src="/img/1.png" alt="" width="30px" />
-          Dev Academy
+        <Link to="/" className="navbar-item">
+          <span className='text-white font-bold text-2xl'>
+            {'</> '}
+            Dev Academy
+          </span>
         </Link>
       </div>
       <nav className="navbar" role="navigation" aria-label="main navigation">

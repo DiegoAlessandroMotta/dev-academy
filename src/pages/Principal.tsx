@@ -20,13 +20,14 @@ const Principal = () => {
       <section className="hero1">
         <div className="presentacion">
           <div className="imagen_presentacion">
-            <img src="/img/1.png" alt="" />
+            {/* <img src="/img/1.png" alt="" /> */}
+            <p className='movimiento' >{"</>"}</p>
             <p className="movimiento">Dev Academy</p>
           </div>
           <div className="dato_presentacion">
             <p>
               INDUSTRIAS Dev Academy <br />
-              comprometido con el desarrollo de las tecnologias peruanas
+              comprometido con el desarrollo de las tecnologias perrunas 😎
             </p>
           </div>
         </div>

@@ -23,7 +23,7 @@
 }
 
 .presentacion .imagen_presentacion {
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     display: flex;
     flex-direction: column;
     align-items: center;
