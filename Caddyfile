@@ -1,0 +1,5 @@
+:80
+
+# serve frontend files
+root * /usr/share/caddy
+file_server
