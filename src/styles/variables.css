@@ -1,11 +1,11 @@
 :root {
-    --color-space-dark: #090b1a;
-    --color-galaxy-violet: #3f0c8f;
-    --color-galaxy-purple: #6b1ac5;
-    --color-galaxy-pink: #c82bfa;
-    --color-cyan-accent: #30d5c8;
+    --color-space-dark: #000000;
+    --color-galaxy-violet: #0763aa;
+    --color-galaxy-purple: #0099ff;
+    --color-galaxy-pink: #2bfa51;
+    --color-cyan-accent: #008289;
     --color-sky-accent: #59ebff;
-    --color-star-pink: #7e0d8d;
+    --color-star-pink: rgb(0, 122, 2);
     --color-text-primary: #ffffff;
     --color-text-secondary: #777e90;
     --color-primary: var(--color-space-dark);
@@ -21,8 +21,8 @@
     --text-secondary: var(--color-text-secondary);
     --text-accent: var(--color-cyan-accent);
     --shadow-accent: 0 0 20px rgba(48, 213, 200, 0.4);
-    --shadow-purple: 0 0 30px rgba(107, 26, 197, 0.5);
-    --shadow-pink: 0 0 25px rgba(200, 43, 250, 0.4);
+    --shadow-purple: 0 0 30px rgba(2, 128, 238, 0.5);
+    --shadow-pink: 0 0 25px rgba(63, 11, 235, 0.4);
     --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.3);
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
