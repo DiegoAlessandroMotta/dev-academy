@@ -309,8 +309,7 @@ class DataPrincipal {
       presentation: {
         logo: "/img/1.png",
         title: "Dev Academy",
-        description:
-          "Aquí no enseñamos a depender de la IA, sino a usarla como herramienta.\n Porque quien sabe programar no teme a la automatización, la lidera !.",
+        description: "Aquí te enseñamos como hacerte millonario utilizando la IA para programar sin tener que aprender nada, ¡PORQUE AQUEL QUE NO SABE NADA NO LE TEME A NADA!",
       },
       startInfo: {
         title: "Inicio",

@@ -22,17 +22,16 @@ const Academy = () => {
     setSelectedCourse(courseId)
     openModal()
   }
-  
 
   return (
     <>
       <ThreeLogos />
-      
+
       <section className="hero">
         <div className="presentacion">
           <div className="imagen_presentacion">
-            <img src={academyInfo.presentation.logo} alt="" />
-            <p className="movimiento">{academyInfo.presentation.title}</p>
+            <p className='movimiento' >{"</>"}</p>
+            <p className="movimiento">Dev Academy</p>
           </div>
           <div className="dato_presentacion">
             <p>
@@ -75,7 +74,7 @@ const Academy = () => {
             ))}
           </p>
         </div>
-        
+
       </section>
       <section className="hero" id="informacion">
         <div className="hero_texts">
@@ -147,7 +146,7 @@ const Academy = () => {
                       </a>
                     </span>
                   </p>
-                  
+
                 </footer>
               </button>
             ))}
@@ -164,13 +163,13 @@ const Academy = () => {
           <div className="card">
             <div className="card-content">
               <p className="subtitle">{academyInfo.intranet.description}</p>
-            </div>              
+            </div>
           </div>
         </div>
         <figure className="hero_figure">
           <ThreeHero variant="minimal" />
           <img src={academyInfo.intranet.image} className="hero_img" alt="" data-animation="up"></img>
-          
+
         </figure>
       </section>
       <CourseModal isOpen={isOpen} onClose={closeModal} courseId={selectedCourse} />
