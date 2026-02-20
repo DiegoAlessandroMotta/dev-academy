@@ -21,11 +21,11 @@ const Principal = () => {
         <div className="presentacion">
           <div className="imagen_presentacion">
             <img src="/img/1.png" alt="" />
-            <p className="movimiento">ZYNOVA</p>
+            <p className="movimiento">Dev Academy</p>
           </div>
           <div className="dato_presentacion">
             <p>
-              INDUSTRIAS ZYNOVA <br />
+              INDUSTRIAS Dev Academy <br />
               comprometido con el desarrollo de las tecnologias peruanas
             </p>
           </div>

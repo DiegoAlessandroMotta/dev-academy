@@ -22,7 +22,7 @@ const Servicios = () => {
       <section className="hero1 hero-alliance">
         <div className="hero_alliance-card">
           <span className="chip chip-alliance">Alianza estratégica</span>
-          <h2 className="hero_title">ZYNOVA x stegendev.com</h2>
+          <h2 className="hero_title">Dev Academy x stegendev.com</h2>
           <p>
             Nos unimos con{' '}
             <a
@@ -180,7 +180,7 @@ const Servicios = () => {
           </p>
           <a
             className="btn-gradient"
-            href="https://wa.me/51925543023?text=Hola%20quiero%20información%20sobre%20los%20servicios%20de%20ZYNOVA"
+            href="https://wa.me/51925543023?text=Hola%20quiero%20información%20sobre%20los%20servicios%20de%20Dev Academy"
             target="_blank"
             rel="noopener noreferrer"
           >

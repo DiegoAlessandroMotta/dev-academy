@@ -162,7 +162,7 @@ class DataPrincipal {
             "Submits",
             "EVALUACION DE PROYECTO",
           ],
-          codeExample: `let CARD = document.getElementById("ZYNOVA")`,
+          codeExample: `let CARD = document.getElementById("Dev Academy")`,
         },
         {
           level: "CUARTO NIVEL",
@@ -260,7 +260,7 @@ class DataPrincipal {
 
   // Información de la empresa
   private companyInfo: CompanyInfo = {
-    name: "ZYNOVA",
+    name: "Dev Academy",
     description:
       "Somos una empresa que busca desarrollar las tecnologias peruanas , y llevarla al siguiente nivel , para eso creemos que devemos formar excelentes programadores y excelentes Sistemas.",
     mission:
@@ -308,7 +308,7 @@ class DataPrincipal {
     return {
       presentation: {
         logo: "/img/1.png",
-        title: "ZYNOVA",
+        title: "Dev Academy",
         description:
           "Aquí no enseñamos a depender de la IA, sino a usarla como herramienta.\n Porque quien sabe programar no teme a la automatización, la lidera !.",
       },
@@ -321,12 +321,12 @@ class DataPrincipal {
       generalInfo: {
         title: "Informacion",
         description:
-          "ZYNOVA comprometido con el desarrollo de tecnologias brinda clases a todos las personas que quieran aprender las tecnologias que estan innovando el futuro. Asesorando a los estudiantes desde cero a intermedio.\nAl completar el curso por completo y estar entre los primeros puestos , obtendras un certificado de reconocimiento firmado por la empresa.(este puede ayudarte a entrar a la empresa).",
+          "Dev Academy comprometido con el desarrollo de tecnologias brinda clases a todos las personas que quieran aprender las tecnologias que estan innovando el futuro. Asesorando a los estudiantes desde cero a intermedio.\nAl completar el curso por completo y estar entre los primeros puestos , obtendras un certificado de reconocimiento firmado por la empresa.(este puede ayudarte a entrar a la empresa).",
         image: "/img/academy4.gif",
       },
       whatIsAcademy: {
-        title: "¿ QUE ES ZYNOVA-Academy?",
-        subtitle: '"ZYNOVA - ACADEMY"',
+        title: "¿ QUE ES Dev Academy-Academy?",
+        subtitle: '"Dev Academy - ACADEMY"',
         description:
           "Se creo esta plataforma para pulir las capacidades de los estudiantes de informatica o sistemas, llevandolos al siguiente nivel. donde cada miembro es asesorado en su camino de la programacion.",
         whatsappLink:
@@ -344,7 +344,7 @@ class DataPrincipal {
         enroll: "https://wa.me/51925543023?text=hola%20quisiera%20matricularme",
         intranet: "#intranet",
         courses: "#cursos",
-        info: "#whi_ZYNOVA",
+        info: "#whi_Dev Academy",
       },
     };
   }

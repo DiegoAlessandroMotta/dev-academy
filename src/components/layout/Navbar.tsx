@@ -63,7 +63,7 @@ const Navbar = () => {
         </button>
         <Link to="/" className="logo navbar-item">
           <img src="/img/1.png" alt="" width="30px" />
-          ZYNOVA
+          Dev Academy
         </Link>
       </div>
       <nav className="navbar" role="navigation" aria-label="main navigation">
